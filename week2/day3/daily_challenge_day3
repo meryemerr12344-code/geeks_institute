@@ -1,0 +1,34 @@
+class Video {
+  constructor(title, uploader, time) {
+    this.title = title;
+    this.uploader = uploader;
+    this.time = time;
+  }
+
+  watch() {
+    console.log(`${this.uploader} watched all ${this.time} seconds of ${this.title}!`);
+  }
+}
+const video1 = new Video("JavaScript Basics", "Alice", 120);
+video1.watch(); 
+// Output: "Alice watched all 120 seconds of JavaScript Basics!"
+
+const video2 = new Video("CSS Flexbox Tutorial", "Bob", 300);
+video2.watch(); 
+// Output: "Bob watched all 300 seconds of CSS Flexbox Tutorial!"
+const videosData = [
+  { title: "HTML Crash Course", uploader: "Charlie", time: 200 },
+  { title: "Node.js Tutorial", uploader: "Dana", time: 450 },
+  { title: "React Basics", uploader: "Eve", time: 360 },
+  { title: "Python for Beginners", uploader: "Frank", time: 500 },
+  { title: "Data Structures", uploader: "Grace", time: 420 },
+];
+const videoInstances = [];
+
+for (const data of videosData) {
+  const video = new Video(data.title, data.uploader, data.time);
+  videoInstances.push(video);
+}
+
+// Call watch() for all instances
+videoInstances.forEach(video => video.watch());
