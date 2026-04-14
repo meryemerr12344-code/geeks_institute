@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <form id="libform">
+        <label>Noun:</label><input type="text" id="noun"><br>
+        <label>Adjective:</label><input type="text" id="adjective"><br>
+        <label>Someone's Name:</label><input type="text" id="person"><br>
+        <label>Verb:</label><input type="text" id="verb"><br>
+        <label>A place:</label><input type="text" id="place"><br><br>
+
+        <button id="lib-button">Lib it!</button>
+        <button type="button" id="shuffle">Shuffle story</button>
+    </form>
+
+    <p>Generated story:
+      <span id="story"></span>
+    </p>
+
+    <script src="script.js"></script>
+ </body>
+</html>
