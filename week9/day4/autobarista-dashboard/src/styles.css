@@ -1,0 +1,61 @@
+/* Reset بسيط */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* الخلفية العامة */
+body {
+  background-color: #f4f6f8;
+}
+
+/* الكونتينر العام */
+.app-container {
+  padding: 30px;
+}
+
+/* العنوان */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* الكارد */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+}
+
+/* عنوان داخل الكارد */
+.card h2 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* النص ديال الكاونتر */
+.counter-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* الزر */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
